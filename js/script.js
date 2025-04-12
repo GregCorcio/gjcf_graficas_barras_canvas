@@ -1,11 +1,11 @@
 //CAPTURANDO EL OBJETO CANVAS
 const canvas = document.getElementById("barChart");
 const ctx  = canvas.getContext("2d");
-
+//Gregorio Javier Corcio Flores
 //DATOS O VALORES DE LA GRAFICA
 const labels = ["Baloncesto","Beisbol","Futbol"];
 const values = [300,200,400];
-const colors = ["#E74C3C","3498DB","E67E22"];
+const colors = ["#E74C3C","#3498DB","#E67E22"];
 
 //
 const charWidth = canvas.width - 100; //AREA HORIZONTAL UTILIZABLE DEL GRAFICO
@@ -63,7 +63,7 @@ function drawBars(){
 
 function drawTitle(){
     ctx.font = "16px Arial";
-    ctx.fillStyle = "000";
+    ctx.fillStyle = "#000";
     ctx.fillText("Unidades vendidas en categorias deportivas", canvas.width/2 - 150, 20); // SE COLOCA UNA LEYENDA O TITULO
 }
 
